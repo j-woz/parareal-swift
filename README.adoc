@@ -32,7 +32,7 @@ Simple Python loop case.
 Based on Figure 2 in https://doi.org/10.1145/2132876.2132883
 
 `pr-1.swift`::
-Initial idea
+Initial idea - simplified dependency structure
 
 == Compute nodes
 
@@ -41,7 +41,7 @@ To run on the compute nodes:
 .  Edit settings.sh to set your `PROJECT` (account) and `QUEUE` (partition).  These variable names are known to Swift/T and are used by it on all schedulers.
 . Run `test-compute.sh`, which provides `-m slurm` to `swift-t`.
 . Swift/T will:
-.. Create and report the name of a new directory for the job, called `TURBINE_OUTPUT`.  This behavior is customizable.
+.. Create and report the name of a new directory for the job, called `TURBINE_OUTPUT`.  This behavior is customizable.  This is the `PWD` for the job.
 .. Create and report the name of a new `turbine-slurm.sh` script, which it then submits.  It does not delete this script, so you can inspect it for debugging.
 .. Run the job.  You can check on it using the normal SLURM tools.
 .. Redirect output to `TURBINE_OUTPUT/output.txt`.

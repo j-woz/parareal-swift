@@ -1,5 +1,8 @@
 
-SWIFT=$HOME/Public/sfw/compute/gcc/swift-t/mpich-py
+# SETTINGS SH
+# Assumes THIS is set
+
+SWIFT=/home/wozniak/Public/sfw/compute/gcc/swift-t/mpich-py
 PATH=$SWIFT/stc/bin:$PATH
 
 # Try to avoid user environment problems
@@ -11,3 +14,7 @@ which swift-t
 export PROJECT=pi-jozik
 export QUEUE=broadwl
 export WALLTIME=00:05:00
+export PROCS=4
+export PPN=1
+
+PATH=$THIS:$PATH

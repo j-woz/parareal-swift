@@ -17,8 +17,8 @@ OUTPUT=$5
 
 TIME=$(( $( date +%s ) - START ))
 VALUE=$RANDOM
-printf "simulation.sh: TIME %3i   ITERATION %2i   SLICE %2i   INPUT %5i   VALUE %5i\n" \
-       $TIME $ITERATION $SLICE $INPUT $VALUE
+printf "simulation.sh: TIME %3i   ITERATION %2i   SLICE %2i   INPUT %5i   VALUE %5i  @ %s\n" \
+       $TIME $ITERATION $SLICE $INPUT $VALUE $( hostname )
 
 sleep 3
 

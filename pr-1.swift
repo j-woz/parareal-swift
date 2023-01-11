@@ -11,7 +11,7 @@ int D[][];
 
 app (file f) simulation(int start, int i, int s, int v)
 {
-  "./simulation.sh" start i s v f ;
+  "simulation.sh" start i s v f ;
 }
 
 start = clock_seconds();

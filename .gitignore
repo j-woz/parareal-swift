@@ -132,4 +132,5 @@ dmypy.json
 *.tic
 
 # Outputs
+turbine-output
 out-*.txt
