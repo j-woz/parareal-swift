@@ -26,7 +26,7 @@ foreach iteration in [1:ITERATIONS]
     {
       file f<name>;
       f = simulation(start, iteration, slice, 0);
-      int value = string2int(read(f));
+      value = string2int(read(f));
       D[1][1] = value;
     }
     else if (iteration <= slice)
@@ -35,14 +35,14 @@ foreach iteration in [1:ITERATIONS]
       {
         file f<name>;
         f = simulation(start, iteration, slice, D[iteration][slice-1]);
-        int value = string2int(read(f));
+        value = string2int(read(f));
         D[iteration][slice] = value;
       }
       else // remaining cells
       {
         file f<name>;
         f = simulation(start, iteration, slice, D[iteration-1][slice]);
-        int value = string2int(read(f));
+        value = string2int(read(f));
         D[iteration][slice] = value;
       }
     }
