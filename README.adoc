@@ -27,6 +27,13 @@ Simple Python case.
 `py-loop-1.swift`::
 Simple Python loop case.
 
+== Parareal workflows
+
+Based on Figure 2 in https://doi.org/10.1145/2132876.2132883
+
+`pr-1.swift`::
+Initial idea
+
 == Compute nodes
 
 To run on the compute nodes:

@@ -127,3 +127,9 @@ dmypy.json
 
 # Pyre type checker
 .pyre/
+
+# Turbine code
+*.tic
+
+# Outputs
+out-*.txt
