@@ -3,8 +3,14 @@
 
 == Quick start
 
+A Hello World example:
 ----
 $ nice ./test-login.sh hello.swift
+----
+
+The PR-1 workflow:
+----
+$ nice ./test-login.sh pr-1.swift
 ----
 
 == File index
